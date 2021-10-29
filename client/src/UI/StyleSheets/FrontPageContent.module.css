@@ -1,0 +1,36 @@
+.frontPageDesc {
+    position: absolute;
+    top: 80%;
+    width: 100%;
+    text-align: center;
+    font-family: Monospace, serif
+}
+
+.frontPageDesc-bottom {
+    position: absolute;
+    top: 90%;
+    width: 100%;
+    text-align: center;
+    font-family: Monospace, serif
+}
+
+.iconStyler-1 {
+    position: absolute;
+    top: 70%;
+    width: 100%;
+    text-align: center;
+}
+
+.iconStyler-2 {
+    position: absolute;
+    top: 70%;
+    width: 100%;
+    left: 35%;
+}
+
+.iconStyler-3 {
+    position: absolute;
+    top: 70%;
+    width: 100%;
+    left: 60%;
+}
