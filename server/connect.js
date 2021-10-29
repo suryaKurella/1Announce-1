@@ -5,6 +5,8 @@ dotenv.config();
 
 const uri = process.env.URI;
 console.log(uri);
+
+// DB connection
 const connectDB = async() => {
     try
     {
@@ -18,6 +20,8 @@ const connectDB = async() => {
         console.log(err);
     }
 }
+
+// schema creation for Users
 const userSchema = new mongoose.Schema({
     email: String,
     user_data: typeof ({}),
