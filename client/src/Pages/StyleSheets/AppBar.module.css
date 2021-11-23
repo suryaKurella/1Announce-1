@@ -3,6 +3,7 @@
 }
 
 
+
 .zoom {
     /*width: 100%;*/
     transition: 0.5s all ease-in-out;
@@ -28,3 +29,4 @@
     color:white;
     cursor: pointer;
 }
+
