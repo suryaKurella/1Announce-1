@@ -5,6 +5,8 @@ node_js:
 
 cache: npm
 
+before_install: cd server
+
 install:
   - npm ci
 
