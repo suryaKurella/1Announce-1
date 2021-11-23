@@ -45,8 +45,9 @@ app.use(express.urlencoded({
 app.post('/',limiter,async (req,res) => {
     try{
         let json_data = req.body;
+        console.log(json_data)
         let isSchedule = ''
-        if (json_data['isScheduleLater'] === "true"){
+        if (json_data['isScheduleLater'] === "false"){
             isSchedule = 'without scheduler'
             const msg = json_data['message'];
             // retrieving email from cache
@@ -62,18 +63,32 @@ app.post('/',limiter,async (req,res) => {
                     const slackBotToken = data[0].user_data.access_token;
                     const channel = data[0].user_data.channel;
 
-                    const payload = {
+
+                    let payload = {
                         // fetch channel name from mongodb
                         channel: channel,
                         attachments: [
                             {
-                                title: "This is a testing of front-back integration",
+                                title: 'json_data[\'title\']',
                                 text: msg,
-                                author_name: "Darshan Shah",
+                                author_name: json_data['userName'],
                                 color: "#e9114e",
                             },
+
+
                         ],
+
                     };
+                    if (req.files) {
+                        console.log(req.files.files)
+                        payload['blocks'] = [
+                            {
+                                "type": "image",
+                                "image_url": 'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg',
+                                "alt_text": "cute cat"
+                            }
+                        ]
+                    }
 
                     // post request to send message to slack
                     fetch("https://slack.com/api/chat.postMessage", {
@@ -96,6 +111,7 @@ app.post('/',limiter,async (req,res) => {
                         .catch((error) => {
                             console.log(error);
                         });
+
 
                 }
             });
