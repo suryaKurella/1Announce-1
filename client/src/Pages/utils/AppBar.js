@@ -49,15 +49,15 @@ export default function AppBarr() {
                         {/*<AccountCircleIcon/>*/}
                     </IconButton>
 
-                    <div className={'d-inline'} onClick={handleClick}>
+                    <div className={`d-inline ${glasses.logo}`}  onClick={handleClick}>
 
-                        <Typography className={'d-inline'} variant="h6" color="inherit" component="div">
+                        <Typography className={'d-inline'} style={{fontSize: 40}} variant="h6" color="inherit" component="div">
                             1
                         </Typography>
-                        <Typography className={'d-inline'} variant="h6" color="red" component="div">
+                        <Typography className={'d-inline'} style={{fontSize: 40}} variant="h6" color="red" component="div">
                             A
                         </Typography>
-                        <Typography className={'d-inline'} variant="h6" color="inherit" component="div">
+                        <Typography className={'d-inline'} style={{fontSize: 40}} variant="h6" color="inherit" component="div">
                             nnounce
                         </Typography>
                     </div>
@@ -66,19 +66,19 @@ export default function AppBarr() {
                         <Container className={`text-center}`}>
                             <Row>
                                 <Col>
-                                    <Tab className={`${glasses['opacity-5']} `} icon=<InfoIcon/> value="About" label="About"/>
+                                    <Tab className={`${glasses['opacity-5']} ${glasses.zoom} `} icon=<InfoIcon/> value="About" label="About"/>
                                 </Col>
 
                                 <Col>
-                                    <Tab onClick={()=>history.push('/announceform')} className={`${glasses['opacity-5']}`} icon=<SpeakerPhoneIcon/> value="Broadcast" label="Broadcast" />
+                                    <Tab onClick={()=>history.push('/announceform')} className={`${glasses['opacity-5']} ${glasses.zoom}`} icon=<SpeakerPhoneIcon/> value="Broadcast" label="Broadcast" />
                                 </Col>
                                 <Col>
-                                    <Tab className={`${glasses['opacity-5']}`} icon=<CachedIcon/> value="Announcements" label="Announcements"/>
+                                    <Tab className={`${glasses['opacity-5']} ${glasses.zoom}`} icon=<CachedIcon/> value="Announcements" label="Announcements"/>
                                 </Col>
 
                                 <Col>
                                     <Tab
-                                        className={`${glasses['opacity-5']} text-white bg bg-danger pr-5 pl-5`}
+                                        className={`${glasses['opacity-5']} text-white bg bg-danger pr-5 pl-5  `}
                                         icon={<LogoutIcon/>}
                                         value="Logout"
                                         label="Logout"
