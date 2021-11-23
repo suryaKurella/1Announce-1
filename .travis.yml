@@ -8,7 +8,7 @@ cache: npm
 install:
   - npm ci
 
-before_script: cd server
 
 script:
+  - build.sh
   - npm test
