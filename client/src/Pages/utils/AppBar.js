@@ -49,7 +49,10 @@ export default function AppBarr() {
                         {/*<AccountCircleIcon/>*/}
                     </IconButton>
 
+
+
                     <div className={`d-inline ${glasses.logo}`}  onClick={handleClick}>
+
 
                         <Typography className={'d-inline'} style={{fontSize: 40}} variant="h6" color="inherit" component="div">
                             1
@@ -66,6 +69,7 @@ export default function AppBarr() {
                         <Container className={`text-center}`}>
                             <Row>
                                 <Col>
+
                                     <Tab className={`${glasses['opacity-5']} ${glasses.zoom} `} icon=<InfoIcon/> value="About" label="About"/>
                                 </Col>
 
@@ -74,6 +78,7 @@ export default function AppBarr() {
                                 </Col>
                                 <Col>
                                     <Tab className={`${glasses['opacity-5']} ${glasses.zoom}`} icon=<CachedIcon/> value="Announcements" label="Announcements"/>
+
                                 </Col>
 
                                 <Col>
