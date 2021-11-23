@@ -1,7 +1,10 @@
 import firebase from 'firebase/compat/app'
 import 'firebase/compat/auth'
+import { GoogleAuthProvider } from "firebase/auth";
 
-// Web app's Firebase configuration
+const provider = new GoogleAuthProvider();
+
+
 const firebaseConfig = {
     apiKey: "AIzaSyDU4t0s5qIwIhOnguM_o8uBVgm475kV4cA",
     authDomain: "auth-development-2e7b3.firebaseapp.com",
@@ -13,5 +16,6 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = firebase.initializeApp(firebaseConfig);
+
 export const auth = app.auth()
 export default app
