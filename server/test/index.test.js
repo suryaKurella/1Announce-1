@@ -13,7 +13,7 @@ describe('Tasks API', () => {
             const task = {
                 message: "test 1",
                 email: "darshan@123.com",
-                isScheduleLater: "true",
+                isScheduleLater: "false",
                 dateSchedule: "Sat Nov 21 2021 12:05:00 GMT-0600 (Central Standard Time)"
             };
             chai.request(server)
@@ -33,7 +33,7 @@ describe('Tasks API', () => {
             const task = {
                 message: "test 1",
                 email: "darshan@123.com",
-                isScheduleLater: "false",
+                isScheduleLater: "true",
                 dateSchedule: new Date(time.getTime() + 2*60000).toString()
             };
             chai.request(server)
