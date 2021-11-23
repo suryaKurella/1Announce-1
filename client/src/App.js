@@ -1,12 +1,14 @@
 import React from 'react';
-import SignUpSignIn from './components/Auth/SignUpSignIn'
-
+import SignUpSignIn from './components/SignUpSignIn'
+import StoreProvider from "./contexts/MobxStoreContext";
 
 function App() {
 
     return (
         <>
-            <SignUpSignIn/>
+            <StoreProvider>
+                <SignUpSignIn/>
+            </StoreProvider>
         </>
     )
 }
