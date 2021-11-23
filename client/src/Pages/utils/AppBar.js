@@ -50,7 +50,9 @@ export default function AppBarr() {
                     </IconButton>
 
 
+
                     <div className={`d-inline ${glasses.logo}`}  onClick={handleClick}>
+
 
                         <Typography className={'d-inline'} style={{fontSize: 40}} variant="h6" color="inherit" component="div">
                             1
@@ -59,7 +61,6 @@ export default function AppBarr() {
                             A
                         </Typography>
                         <Typography className={'d-inline'} style={{fontSize: 40}} variant="h6" color="inherit" component="div">
-
                             nnounce
                         </Typography>
                     </div>
@@ -82,9 +83,7 @@ export default function AppBarr() {
 
                                 <Col>
                                     <Tab
-
                                         className={`${glasses['opacity-5']} text-white bg bg-danger pr-5 pl-5  `}
-
                                         icon={<LogoutIcon/>}
                                         value="Logout"
                                         label="Logout"
