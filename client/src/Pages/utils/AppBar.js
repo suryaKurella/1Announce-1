@@ -65,7 +65,7 @@ export default function AppBarr() {
                         </Typography>
                     </div>
                     {
-                        currentUser &&
+                        (localStorage.getItem('isUserLog') === 'true') &&
                         <Container className={`text-center}`}>
                             <Row>
                                 <Col>
@@ -88,6 +88,8 @@ export default function AppBarr() {
                                         value="Logout"
                                         label="Logout"
                                         onClick={async () => {
+
+                                            localStorage.setItem('isUserLog', false)
 
                                             try {
                                                 await logout();
