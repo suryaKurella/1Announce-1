@@ -10,6 +10,7 @@ import {PrimaryButton} from "../utils/PrimaryButton";
 import {useObserver} from "mobx-react";
 import {FileUploader} from '../utils/FileUploader'
 import {useHistory} from "react-router-dom";
+import Title from "../../components/AnnounceForm/Title";
 import axios from 'axios'
 //component import
 import formSchemaBase from "../YupSchemas/FormSchemaBase";
@@ -84,12 +85,13 @@ const AnnounceForm = () => {
                                   console.log(errors)
 
                                   // let {userName, message, scheduler, slack, twitter, teams, dateSchedule, files} = data
-                                  let { message, scheduler, slack, twitter, teams, dateSchedule, files} = data
+                                  let { title, message, scheduler, slack, twitter, teams, dateSchedule, files} = data
                                   if (scheduler === BROADCAST_RIGHTNOW) {
                                       dateSchedule = new Date()
                                   }
                                   // store.userName = userName
                                   store.userName = currentUser.displayName
+                                  store.title = title
                                   store.message = message
                                   store.scheduler = scheduler
                                   store.isScheduleLater = scheduler !== BROADCAST_RIGHTNOW
@@ -103,7 +105,8 @@ const AnnounceForm = () => {
                                   console.log(data)
                                   history.push('/confirm')
                               })}>
-                            <UserName/>
+                            {/*<UserName/>*/}
+                            <Title/>
                             {/*Message*/}
                             <Message message={MESSAGE}/>
 
