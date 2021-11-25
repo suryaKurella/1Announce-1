@@ -69,7 +69,7 @@ app.post('/',limiter,async (req,res) => {
                         channel: channel,
                         attachments: [
                             {
-                                title: 'json_data[\'title\']',
+                                title: json_data['title'],
                                 text: msg,
                                 author_name: json_data['userName'],
                                 color: "#e9114e",
@@ -147,9 +147,9 @@ app.post('/',limiter,async (req,res) => {
                             channel: channel,
                             attachments: [
                                 {
-                                    title: "This is a testing of 1announce",
+                                    title: json_data['title'],
                                     text: msg,
-                                    author_name: "Darshan Shah",
+                                    author_name: json_data['userName'],
                                     color: "#e9114e",
                                 },
                             ],
