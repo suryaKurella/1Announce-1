@@ -20,6 +20,9 @@ import SpeakerPhoneIcon from '@mui/icons-material/SpeakerPhone';
 import InfoIcon from '@mui/icons-material/Info';
 import {FaBeer} from 'react-icons/fa';
 import glasses from '../StyleSheets/AppBar.module.css'
+import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
+
+
 export default function AppBarr() {
 
     const history = useHistory()
@@ -104,6 +107,14 @@ export default function AppBarr() {
 
 
                                 </Col>
+
+                                <Col>
+                                    <Tab className={`${glasses['opacity-5']} `}
+                                         icon=<PersonOutlineIcon/> value="Announcements" label={currentUser.displayName}/>
+
+                                </Col>
+
+
                             </Row>
                         </Container>
                     }
