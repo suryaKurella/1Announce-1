@@ -39,7 +39,10 @@
     "react-icons": "^4.3.1",
     "react-router-dom": "^5.3.0",
     "react-scripts": "3.4.3",
-    "yup": "^0.32.11"
+    "yup": "^0.32.11",
+    "resolutions": {
+      "react-test-renderer": "your.reaction.version"
+    }
   },
   "scripts": {
     "start": "react-scripts start",
