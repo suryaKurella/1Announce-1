@@ -31,13 +31,18 @@ We have three major features in this Full STack MERN Application:
    * We are implementing the following channels Microsoft Teams, Slack and Twitter.
 
    * All the routing calls will be handled in the coming sprints.
+   
 
 4. `Announcement Scheduler`:
 
    * Using node-cron, this functionality creates scheduler which posts announcement at user given time input
    * Here, user can give input in date/hour/minute and message will be posted to selected channel according to that time
+   
 
 5. `NavBar`:
-   *
+
+   * The Navbar acts as a one-stop solution for navigating through the entire application. It has the options like 'About', 'Broadcast', 'Announcements', 'Logout' and 'User Profile'.
+
+
 6. Global Routes
    * 
