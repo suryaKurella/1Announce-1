@@ -4,9 +4,9 @@ We have three major features in this Full STack MERN Application:
 
 1. `Authentication`:
 
-    * Authentication is one of the most important features of this project. We used firebase authentication for authenticating the user into the system.
-    User will be displayed with a front page for Sign up and Sign In Functionality. We used conditional rendering to acheive both Sign up and Sign in efficiently in a single page without having to traverse to  new route.
-    Currently a new user can only Sign up by providing their `Email` and `Password` such that next time user logs into the system, they will be authenticated using user object of firebase OAuth. We have a plan to implement authentications using `Google`, `Facebook` and `Github` in future sprints.
+   * Authentication is one of the most important features of this project. We used firebase authentication for authenticating the user into the system.
+     User will be displayed with a front page for Sign up and Sign In Functionality. We used conditional rendering to acheive both Sign up and Sign in efficiently in a single page without having to traverse to  new route.
+     Currently a new user can only Sign up by providing their `Email` and `Password` such that next time the user directly logs into the system, they will be authenticated using user object of firebase OAuth.
 
 
 
@@ -29,17 +29,23 @@ We have three major features in this Full STack MERN Application:
    * It also provides an option to select the date and time when the broadcasting needs to be triggered to different channels. 
 
    * We are implementing the following channels Microsoft Teams, Slack and Twitter.
+   
 
-   * The first-time users will be displayed with an option to authorize the channels and only when the users click the particular channel the tokens will be created to get the authorization for that particular channel. Once the Authorization is completed the users will be given the option to select that channel to broadcast the message.
-
-   * All the routing calls will be handled in the coming sprints.
-
-4. Announcement Scheduler
+4. `Announcement Scheduler`:
 
    * Using node-cron, this functionality creates scheduler which posts announcement at user given time input
    * Here, user can give input in date/hour/minute and message will be posted to selected channel according to that time
+   
 
-5. Navbar
-   *
-6. Global Routes
+5. `NavBar`:
+
+   * The Navbar acts as a one-stop solution for navigating through the entire application. It has the options like `About`, `Broadcast`, `Announcements`, `Logout` and `User Profile`.
+   * The `Broadcast` option helps in broadcasting the message to the selected channel once the required information is filled by the user.
+   * We have implemented the `Log out` feature which logs the user out from the current session.
+   * Once the user session ends, all the navbar options are auto hidden.
+   * For Security reasons all the navbar options will only be displayed to the authenticated user.
+   * Each option can be navigated through a simple click event.
+
+
+6. `Global Routes`
    * 
