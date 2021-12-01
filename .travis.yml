@@ -17,4 +17,5 @@ script:
 after_script:
   - cd ..
   - cd client
+  - npm ci
   - npm run test
