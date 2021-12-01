@@ -13,3 +13,8 @@ install:
 
 script:
   - npm test
+
+after_script:
+  - cd ..
+  - cd client
+  - npm run test
