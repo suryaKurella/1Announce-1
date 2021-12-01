@@ -46,7 +46,8 @@ We have three major features in this Full STack MERN Application:
    * We have implemented the `Log out` feature which logs the user out from the current session.
    * Once the user session ends, all the navbar options are auto hidden.
    * For Security reasons all the navbar options will only be displayed to the authenticated user.
+   * Each option can be navigated through a simple click event.
 
 
-6. Global Routes
+6. `Global Routes`
    * 
