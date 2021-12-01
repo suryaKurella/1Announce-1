@@ -41,7 +41,9 @@ We have three major features in this Full STack MERN Application:
 
 5. `NavBar`:
 
-   * The Navbar acts as a one-stop solution for navigating through the entire application. It has the options like 'About', 'Broadcast', 'Announcements', 'Logout' and 'User Profile'.
+   * The Navbar acts as a one-stop solution for navigating through the entire application. It has the options like `About`, `Broadcast`, `Announcements`, `Logout` and `User Profile`.
+   * The `Broadcast` option helps in broadcasting the message to the selected channel once the required information is filled by the user.
+   * We have implemented the `Log out` feature which logs the user out from the application.
 
 
 6. Global Routes
