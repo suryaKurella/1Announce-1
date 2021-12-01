@@ -29,8 +29,6 @@ We have three major features in this Full STack MERN Application:
    * It also provides an option to select the date and time when the broadcasting needs to be triggered to different channels. 
 
    * We are implementing the following channels Microsoft Teams, Slack and Twitter.
-
-   * All the routing calls will be handled in the coming sprints.
    
 
 4. `Announcement Scheduler`:
