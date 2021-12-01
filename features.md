@@ -30,16 +30,14 @@ We have three major features in this Full STack MERN Application:
 
    * We are implementing the following channels Microsoft Teams, Slack and Twitter.
 
-   * The first-time users will be displayed with an option to authorize the channels and only when the users click the particular channel the tokens will be created to get the authorization for that particular channel. Once the Authorization is completed the users will be given the option to select that channel to broadcast the message.
-
    * All the routing calls will be handled in the coming sprints.
 
-4. Announcement Scheduler
+4. `Announcement Scheduler`:
 
    * Using node-cron, this functionality creates scheduler which posts announcement at user given time input
    * Here, user can give input in date/hour/minute and message will be posted to selected channel according to that time
 
-5. Navbar
+5. `NavBar`:
    *
 6. Global Routes
    * 
