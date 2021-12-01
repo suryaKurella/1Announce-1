@@ -4,9 +4,9 @@ We have three major features in this Full STack MERN Application:
 
 1. `Authentication`:
 
-    * Authentication is one of the most important features of this project. We used firebase authentication for authenticating the user into the system.
-    User will be displayed with a front page for Sign up and Sign In Functionality. We used conditional rendering to acheive both Sign up and Sign in efficiently in a single page without having to traverse to  new route.
-    Currently a new user can only Sign up by providing their `Email` and `Password` such that next time user logs into the system, they will be authenticated using user object of firebase OAuth. We have a plan to implement authentications using `Google`, `Facebook` and `Github` in future sprints.
+   * Authentication is one of the most important features of this project. We used firebase authentication for authenticating the user into the system.
+     User will be displayed with a front page for Sign up and Sign In Functionality. We used conditional rendering to acheive both Sign up and Sign in efficiently in a single page without having to traverse to  new route.
+     Currently a new user can only Sign up by providing their `Email` and `Password` such that next time the user directly logs into the system, they will be authenticated using user object of firebase OAuth.
 
 
 
