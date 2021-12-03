@@ -14,5 +14,5 @@ Step 3: Run the project
 * To Run server side, go to server folder and run ``npm start``
 * To Run client side, go to client folder and run ``npm start``
 
-Step 4: Check out our [YouTube]() demo to see how the product works.
+Step 4: Check out our [YouTube](https://youtu.be/r_sLfgYNqCg) demo to see how the product works.
 
